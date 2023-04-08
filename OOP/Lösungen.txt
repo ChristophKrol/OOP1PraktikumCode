@@ -1,0 +1,10 @@
+public double auszahlen(double betrag){
+        if (betrag > this.geldbetrag){
+            System.out.println("Betrag zu groß!");
+            return 0;
+        }
+        else {
+            this.geldbetrag =- betrag;
+            return betrag;
+        }
+    }
